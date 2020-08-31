@@ -1,9 +1,8 @@
-{% raw %}
-  {% extends 'checkerapp/course_content.html' %}
-  {% load xchk_instructions %}
-  {% load static %}
-  {% block course_content %}
-  <ul>
+{% extends 'checkerapp/course_content.html' %}
+{% load xchk_instructions %}
+{% load static %}
+{% block course_content %}
+<ul>
 <li>een commando wordt gestuurd naar copy mode met <code>-X</code> optie</li>
 <li>
 de <code>mode-keys</code> optie bepaalt hierbij welke key table wordt gebruikt: <code>copy-mode</code> of <code>copy-mode-vi</code><ul>
@@ -12,5 +11,4 @@ de <code>mode-keys</code> optie bepaalt hierbij welke key table wordt gebruikt: 
 </li>
 </ul>
 
-  {% endblock course_content %}
-{% endraw %}
+{% endblock course_content %}

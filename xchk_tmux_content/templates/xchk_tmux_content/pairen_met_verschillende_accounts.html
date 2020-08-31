@@ -1,9 +1,8 @@
-{% raw %}
-  {% extends 'checkerapp/course_content.html' %}
-  {% load xchk_instructions %}
-  {% load static %}
-  {% block course_content %}
-  <ul>
+{% extends 'checkerapp/course_content.html' %}
+{% load xchk_instructions %}
+{% load static %}
+{% block course_content %}
+<ul>
 <li>meerdere users toevoegen aan groep tmux</li>
 <li>folder voor tmux sessies aanmaken (bv. <code>/var/tmux</code>)</li>
 <li>
@@ -20,5 +19,4 @@ tmux loopt met de instellingen van de <code>.tmux.conf</code> die gebruikt is om
 </li>
 </ul>
 
-  {% endblock course_content %}
-{% endraw %}
+{% endblock course_content %}

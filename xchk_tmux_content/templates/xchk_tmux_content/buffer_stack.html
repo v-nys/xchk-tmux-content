@@ -1,9 +1,8 @@
-{% raw %}
-  {% extends 'checkerapp/course_content.html' %}
-  {% load xchk_instructions %}
-  {% load static %}
-  {% block course_content %}
-  <ul>
+{% extends 'checkerapp/course_content.html' %}
+{% load xchk_instructions %}
+{% load static %}
+{% block course_content %}
+<ul>
 <li>paste buffer != (system) clipboard</li>
 <li>iedere copy creëert een nieuwe buffer, bovenaan een <strong>stack van buffers</strong></li>
 <li><code>list-buffers</code> toont de stack</li>
@@ -16,5 +15,4 @@ plakken uit buffer plakt uit de top van de stack<ul>
 <li>eigenlijk is het deze buffer stack die gedeeld is over alle sessies heen</li>
 </ul>
 
-  {% endblock course_content %}
-{% endraw %}
+{% endblock course_content %}

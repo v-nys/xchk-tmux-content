@@ -1,9 +1,8 @@
-{% raw %}
-  {% extends 'checkerapp/course_content.html' %}
-  {% load xchk_instructions %}
-  {% load static %}
-  {% block course_content %}
-  <ul>
+{% extends 'checkerapp/course_content.html' %}
+{% load xchk_instructions %}
+{% load static %}
+{% block course_content %}
+<ul>
 <li>systeembrede configuratie: <code>/etc/tmux.conf</code></li>
 <li>lokale configuratie: <code>~/.tmux.conf</code></li>
 <li>
@@ -37,5 +36,4 @@ gewijzigde configuratie laden:<ul>
 </li>
 </ul>
 
-  {% endblock course_content %}
-{% endraw %}
+{% endblock course_content %}

@@ -1,9 +1,8 @@
-{% raw %}
-  {% extends 'checkerapp/course_content.html' %}
-  {% load xchk_instructions %}
-  {% load static %}
-  {% block course_content %}
-  <ul>
+{% extends 'checkerapp/course_content.html' %}
+{% load xchk_instructions %}
+{% load static %}
+{% block course_content %}
+<ul>
 <li>
 vergelijkbaar met tabs in een browser,...<ul>
 <li>hebben een naam (kan gewijzigd worden)</li>
@@ -23,5 +22,4 @@ eerste venster in een sessie kan een naam krijgen met <code>-n</code> vlag<ul>
 <li><strong>volledig window</strong> sluiten: <code>prefix-&</code></li>
 </ul>
 
-  {% endblock course_content %}
-{% endraw %}
+{% endblock course_content %}

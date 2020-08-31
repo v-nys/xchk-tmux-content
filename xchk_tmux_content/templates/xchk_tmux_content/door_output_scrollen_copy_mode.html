@@ -1,9 +1,8 @@
-{% raw %}
-  {% extends 'checkerapp/course_content.html' %}
-  {% load xchk_instructions %}
-  {% load static %}
-  {% block course_content %}
-  <ul>
+{% extends 'checkerapp/course_content.html' %}
+{% load xchk_instructions %}
+{% load static %}
+{% block course_content %}
+<ul>
 <li>moet soms ver kunnen terugscrollen in programma-output</li>
 <li>gebeurt via copy mode</li>
 <li>default binding: <code>prefix [</code></li>
@@ -19,5 +18,4 @@ default navigatie:<ul>
 <li><strong>naast normal mode en copy mode heeft tmux geen verdere modes</strong></li>
 </ul>
 
-  {% endblock course_content %}
-{% endraw %}
+{% endblock course_content %}
