@@ -92,6 +92,27 @@ class BufferDoorzoekenView(ContentView):
     strat = Strategy(refusing_check=TrueCheck(),accepting_check=Negation(TrueCheck()))
 
 
+class AlDanNietBestaandeSessieGebruikenView(ContentView):
+    uid = 'xchk_tmux_content_al_dan_niet_bestaande_sessie_gebruiken'
+    title = 'Al dan niet bestaande sessie gebruiken'
+    template = 'xchk_tmux_content/al_dan_niet_bestaande_sessie_gebruiken.html'
+    strat = Strategy(refusing_check=TrueCheck(),accepting_check=Negation(TrueCheck()))
+
+
+class SubconfiguratiesConditioneelInladenView(ContentView):
+    uid = 'xchk_tmux_content_subconfiguraties_conditioneel_inladen'
+    title = 'subconfiguraties conditioneel inladen'
+    template = 'xchk_tmux_content/subconfiguraties_conditioneel_inladen.html'
+    strat = Strategy(refusing_check=TrueCheck(),accepting_check=Negation(TrueCheck()))
+
+
+class TmuxPluginsView(ContentView):
+    uid = 'xchk_tmux_content_tmux_plugins'
+    title = 'tmux plugins'
+    template = 'xchk_tmux_content/tmux_plugins.html'
+    strat = Strategy(refusing_check=TrueCheck(),accepting_check=Negation(TrueCheck()))
+
+
 class CommandModeActiverenView(ContentView):
     uid = 'xchk_tmux_content_command_mode_activeren'
     title = 'command mode activeren'
@@ -190,6 +211,13 @@ class HooksView(ContentView):
     strat = Strategy(refusing_check=TrueCheck(),accepting_check=Negation(TrueCheck()))
 
 
+class NavigerenTussenSessiesView(ContentView):
+    uid = 'xchk_tmux_content_navigeren_tussen_sessies'
+    title = 'navigeren tussen sessies'
+    template = 'xchk_tmux_content/navigeren_tussen_sessies.html'
+    strat = Strategy(refusing_check=TrueCheck(),accepting_check=Negation(TrueCheck()))
+
+
 class VenstersOfPanesMetEenCommandoView(ContentView):
     uid = 'xchk_tmux_content_vensters_of_panes_met_een_commando'
     title = 'vensters of panes met een commando'
@@ -229,6 +257,13 @@ class IndexenVoorWindowsEnPanesInstellenView(ContentView):
     uid = 'xchk_tmux_content_indexen_voor_windows_en_panes_instellen'
     title = 'indexen voor windows en panes instellen'
     template = 'xchk_tmux_content/indexen_voor_windows_en_panes_instellen.html'
+    strat = Strategy(refusing_check=TrueCheck(),accepting_check=Negation(TrueCheck()))
+
+
+class PaneLoggenView(ContentView):
+    uid = 'xchk_tmux_content_pane_loggen'
+    title = 'pane loggen'
+    template = 'xchk_tmux_content/pane_loggen.html'
     strat = Strategy(refusing_check=TrueCheck(),accepting_check=Negation(TrueCheck()))
 
 
@@ -278,6 +313,13 @@ class MouseModeView(ContentView):
     uid = 'xchk_tmux_content_mouse_mode'
     title = 'mouse mode'
     template = 'xchk_tmux_content/mouse_mode.html'
+    strat = Strategy(refusing_check=TrueCheck(),accepting_check=Negation(TrueCheck()))
+
+
+class VenstersTussenSessiesVerplaatsenView(ContentView):
+    uid = 'xchk_tmux_content_vensters_tussen_sessies_verplaatsen'
+    title = 'vensters tussen sessies verplaatsen'
+    template = 'xchk_tmux_content/vensters_tussen_sessies_verplaatsen.html'
     strat = Strategy(refusing_check=TrueCheck(),accepting_check=Negation(TrueCheck()))
 
 
